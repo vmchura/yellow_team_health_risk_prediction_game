@@ -1,0 +1,265 @@
+\section{Define the budget}\label{sec:define-the-budget}
+
+\subsection{Personal cost per hour}\label{subsec:personal-cost-per-hour}
+
+\begin{tabular}{| >{\raggedright\arraybackslash}p{8cm} | r|}
+    \hline
+    Personal                & Costo por hora \\ \hline \hline
+    Solution Arquitect (SA) & 100,00 \euro   \\ \hline
+    Project Manager (PM)    & 120,00 \euro   \\ \hline
+    Project Leader (PL)     & 80,00 \euro    \\ \hline
+    Data Scientist (DS)     & 70,00 \euro    \\ \hline
+    Data Engineer (DE)      & 60,00 \euro    \\ \hline
+    Software Engineer (SE)  & 60,00 \euro    \\ \hline
+
+\end{tabular}
+
+\subsection{PARTIDA 1: GENERAL, 3 ENFERMEDADES}\label{subsec:partida-1:-general-3-enfermedades}
+\begin{center}
+    \renewcommand{\arraystretch}{1.0} % Adjust row height
+    \setlength{\tabcolsep}{5pt} % Adjust column spacing
+    \begin{tabular}{| >{\raggedright\arraybackslash}p{8cm} | c | c |c |c|c|c|r|}
+        \hline
+        \rowcolor[HTML]{DCDCDC} \multicolumn{8}{|c|}{INICIO DEL PROYECTO} \\ \hline
+        Task / Personal                                                  & SA & PM & PL & DS & DE  & SE & Complexity \\ \hline
+        Crear repositorios Github                                        & 8  & 0  & 0  & 0  & 8   & 0  & Baja       \\ \hline
+        Iniciar canales de comunicación en Teams                         & 0  & 2  & 0  & 0  & 0   & 0  & Baja       \\ \hline
+        Calendarización de reuniones periódicas                          & 0  & 6  & 0  & 0  & 0   & 0  & Media      \\ \hline
+        \hline \multicolumn{7}{|c|}{Total} & 2.240,00 \euro \\ \hline
+        \noalign{\vskip 5mm}
+        \hline
+
+        \rowcolor[HTML]{DCDCDC} \multicolumn{8}{|c|}{RECOGIDA DE REQUISITOS FUNCIONALES} \\ \hline
+        Task / Personal                                                  & SA & PM & PL & DS & DE  & SE & Complexity \\ \hline
+        Reuniones con los stakeholders                                   & 12 & 16 & 12 & 0  & 0   & 0  & Alta       \\ \hline
+        Confección del documento de requisitos                           & 12 & 12 & 12 & 0  & 0   & 0  & Baja       \\ \hline
+        Análisis y confección del documento del arquitecto de soluciones & 12 & 4  & 4  & 4  & 4   & 4  & Baja       \\ \hline
+        \hline \multicolumn{7}{|c|}{Total} & 10.440,00 \euro \\ \hline
+        \noalign{\vskip 5mm}
+        \hline
+
+        \rowcolor[HTML]{DCDCDC} \multicolumn{8}{|c|}{EXPLORATORY DATA ANALYSIS} \\ \hline
+        Task / Personal                                                  & SA & PM & PL & DS & DE  & SE & Complexity \\ \hline
+        Limpieza de datos (teniendo en cuenta el challenge)              & 4  & 6  & 6  & 90 & 30  & 0  & Alta       \\ \hline
+        Feature Engineering                                              & 0  & 0  & 0  & 90 & 30  & 0  & Alta       \\ \hline
+        Visualización de datos                                           & 0  & 4  & 4  & 30 & 30  & 0  & Baja       \\ \hline
+        \hline \multicolumn{7}{|c|}{Total} & 22.500,00 \euro \\ \hline
+        \noalign{\vskip 5mm}
+        \hline
+
+        \rowcolor[HTML]{DCDCDC} \multicolumn{8}{|c|}{DESARROLLO DEL MODELO 1} \\ \hline
+        Task / Personal                                                  & SA & PM & PL & DS & DE  & SE & Complexity \\ \hline
+        Investigación sobre posibles modelos                             & 10 & 5  & 15 & 5  & 1   & 0  & Baja       \\ \hline
+        Entrenamiento del modelo                                         & 0  & 0  & 35 & 50 & 100 & 0  & Alta       \\ \hline
+        Documentación modelo                                             & 0  & 0  & 0  & 5  & 5   & 0  & Baja       \\ \hline
+        Testing y comparación                                            & 0  & 0  & 0  & 5  & 15  & 0  & Media      \\ \hline
+        \hline \multicolumn{7}{|c|}{Total} & 17.410,00 \euro \\ \hline
+
+
+    \end{tabular}
+    \begin{tabular}{| >{\raggedright\arraybackslash}p{8cm} | c | c |c |c|c|c|r|}
+        \hline
+
+        \rowcolor[HTML]{DCDCDC} \multicolumn{8}{|c|}{DESARROLLO DEL MODELO 2} \\ \hline
+        Task / Personal                                            & SA & PM & PL & DS & DE  & SE & Complexity \\ \hline
+        Investigación sobre posibles modelos                       & 10 & 5  & 15 & 5  & 1   & 0  & Baja       \\ \hline
+        Entrenamiento del modelo                                   & 0  & 0  & 35 & 50 & 100 & 0  & Alta       \\ \hline
+        Documentación modelo                                       & 0  & 0  & 0  & 5  & 5   & 0  & Baja       \\ \hline
+        Testing y comparación                                      & 0  & 0  & 0  & 5  & 15  & 0  & Media      \\ \hline
+        \hline \multicolumn{7}{|c|}{Total} & 17.410,00 \euro \\ \hline
+        \noalign{\vskip 5mm}
+        \hline
+
+        \rowcolor[HTML]{DCDCDC} \multicolumn{8}{|c|}{DESARROLLO DEL MODELO 3} \\ \hline
+        Task / Personal                                            & SA & PM & PL & DS & DE  & SE & Complexity \\ \hline
+        Investigación sobre posibles modelos                       & 10 & 5  & 15 & 5  & 1   & 0  & Baja       \\ \hline
+        Entrenamiento del modelo                                   & 0  & 0  & 35 & 50 & 100 & 0  & Alta       \\ \hline
+        Documentación modelo                                       & 0  & 0  & 0  & 5  & 5   & 0  & Baja       \\ \hline
+        Testing y comparación                                      & 0  & 0  & 0  & 5  & 15  & 0  & Media      \\ \hline
+        \hline \multicolumn{7}{|c|}{Total} & 17.410,00 \euro \\ \hline
+        \noalign{\vskip 5mm}
+        \hline
+
+        \rowcolor[HTML]{DCDCDC} \multicolumn{8}{|c|}{MLOPS - CREACIÓN DE LA PIPELINE DE DESPLIEGUE} \\ \hline
+        Task / Personal                                            & SA & PM & PL & DS & DE  & SE & Complexity \\ \hline
+        Crear servidores                                           & 0  & 0  & 0  & 0  & 5   &    & Baja       \\ \hline
+        Desarrollo de pipeline                                     & 0  & 0  & 5  & 5  & 15  &    & Media      \\ \hline
+        Documentación de pipeline                                  & 0  & 0  & 0  & 0  & 15  &    & Baja       \\ \hline
+        Pruebas de despliegue                                      & 0  & 0  & 0  & 0  & 15  &    & Baja       \\ \hline
+        \hline \multicolumn{7}{|c|}{Total} & 3.750,00 \euro \\ \hline
+        \noalign{\vskip 5mm}
+        \hline
+
+        \rowcolor[HTML]{DCDCDC}  \multicolumn{8}{|c|}{APLICACIÓN INTERFAZ GRÁFICA} \\ \hline
+        Task / Personal                                            & SA & PM & PL & DS & DE  & SE & Complexity \\ \hline
+        Desarrollo de la aplicación                                & 0  & 0  & 0  & 0  & 0   & 50 & Media      \\ \hline
+        Documentación aplicación y reportes de usabilidad          & 0  & 0  & 0  & 0  & 0   & 10 & Baja       \\ \hline
+        Backend                                                    & 0  & 0  & 0  & 0  & 0   & 30 & Media      \\ \hline
+        Pipeline de despliegue                                     & 0  & 0  & 0  & 0  & 0   & 20 & Media      \\ \hline
+        Testing                                                    & 0  & 0  & 0  & 0  & 0   & 10 & Baja       \\ \hline
+        \hline \multicolumn{7}{|c|}{Total} & 6.600,00 \euro \\ \hline
+        \noalign{\vskip 5mm}
+        \hline
+
+        \multicolumn{8}{|c|}{VALIDACIÓN COMITÉ ÉTICO} \\ \hline
+        Task / Personal                                            & SA & PM & PL & DS & DE  & SE & Complexity \\ \hline
+        Reunión general                                            & 5  & 5  & 5  & 2  & 2   & 2  & Media      \\ \hline
+        Revalidación y correcciones propuestas por el comité ético & 2  & 2  & 2  & 1  & 1   & 1  & Alta       \\ \hline
+        \hline \multicolumn{7}{|c|}{Total} & 2.670,00\euro \\ \hline
+
+    \end{tabular}
+    \begin{tabular}{| >{\raggedright\arraybackslash}p{8cm} | c | c |c |c|c|c|r|}
+        \hline
+        \rowcolor[HTML]{DCDCDC}  \multicolumn{8}{|c|}{PUESTA A PRODUCCIÓN} \\ \hline
+        Task / Personal                                                                                                           & SA & PM & PL & DS & DE & SE & Complexity \\ \hline
+        Formación a los médicos del hospital                                                                                      & 2  & 2  & 2  & 4  & 4  & 4  & Alta       \\ \hline
+        Prueba en hospital Primer Año                                                                                             & 6  & 3  & 5  & 3  & 5  & 5  & Alta       \\ \hline
+        Seguimiento del comportamiento del modelo                                                                                 & 0  & 20 & 20 & 40 & 50 & 20 & Media      \\ \hline
+        \hline \multicolumn{7}{|c|}{Total} & 14.530,00 € \euro \\ \hline
+        \noalign{\vskip 5mm}
+        \hline
+
+        \rowcolor[HTML]{DCDCDC}  \multicolumn{8}{|c|}{SEGUIMIENTO RENDIMIENTO DEL MODELO} \\ \hline \hline
+        \multicolumn{8}{|c|}{A 6 meses: Primera revisión del modelo } \\ \hline
+        Comparar 100 predicciones con diagnósticos reales y medir precisión.                                                      & 0  & 0  & 0  & 16 & 6  & 0& Baja\\ \hline
+        Analizar sesgos en predicciones por edad, género y grupo social.                                                          & 0  & 0  & 0  & 16 & 6  & 0  & Baja       \\ \hline
+        Recoger feedback de 10 médicos sobre facilidad de uso.                                                                    & 0  & 6  & 0  & 5  & 4  & 0  & Baja       \\ \hline
+        \hline \multicolumn{8}{|c|}{A 1 año: Evaluación del impacto en hospitales} \\ \hline
+        Comparar métricas actuales con las del primer mes                                                                         & 0  & 0  & 0  & 12 & 6  & 0  & Baja       \\ \hline
+        Medir impacto en tiempos de diagnóstico → Comparar el tiempo promedio de diagnóstico con y sin el modelo en 3 hospitales.& 0& 8& 0& 12& 6& 0& Baja\\ \hline
+        Evaluar si los datos han cambiado y si es necesario reentrenar el modelo.                                                 & 8  & 0  & 0  & 16& 12& 0& Baja\\ \hline
+        \hline \multicolumn{8}{|c|}{A 2 años: Actualización con nuevos datos } \\ \hline
+        Recolectar 2 años de datos nuevos de hospitales → Integrar datos recientes y evaluar impacto en el modelo.& 0& 0& 5& 15& 0& 0& Baja\\ \hline
+        Realizar pruebas A/B en un hospital piloto antes de desplegar la actualización.                                           & 0& 0& 5& 15& 0& 0& Baja\\ \hline
+        Reentrenar el modelo si la precisión ha bajado más de un 5\%.                                                             & 0  & 0  & 5  & 15 & 0  & 0  & Media      \\ \hline
+        \hline \multicolumn{8}{|c|}{A 3 años: Revisión de viabilidad } \\ \hline
+        Recoger feedback de médicos y hospitales                                                                                  &    & 5  & 5  &    &    &    & Baja       \\ \hline
+        Comparar el modelo actual con 3 nuevas tecnologías en el sector.                                                          &    &    & 5  & 10 &    &    & Baja       \\ \hline
+        Evaluar costos operativos y mantenimiento.                                                                                &    & 5  &    &    &    &    & Baja       \\ \hline
+        \hline \multicolumn{8}{|c|}{A 4 años: Evaluar si necesita reemplazo } \\ \hline
+        Comparar con modelos más recientes y evaluar si conviene actualizar.                                                      &    &    & 5  & 10 &    &    & Baja       \\ \hline
+        Analizar si el rendimiento del modelo sigue siendo aceptable.                                                             &    &    & 5  & 10 &    &    & Baja       \\ \hline
+        \hline \multicolumn{8}{|c|}{A 5 años: Decidir si continuar o crear un nuevo modelo } \\ \hline
+        Revisar el historial de rendimiento y compararlo con nuevos estándares.                                                   &    & 8  & 5  &    &    &    & Baja       \\ \hline
+        Tomar decisión de actualizar o reemplazar el modelo.                                                                      & 5  & 5  & 5  &    &    &    & Baja       \\ \hline
+        \hline \multicolumn{7}{|c|}{Total} & 22.380,00  \euro \\ \hline
+    \end{tabular}
+\end{center}
+
+\subsection{PARTIDA 2: RETRAINING}\label{subsec:partida-2:-retraining}
+\begin{center}
+    \renewcommand{\arraystretch}{1.0} % Adjust row height
+    \setlength{\tabcolsep}{5pt} % Adjust column spacing
+    \begin{tabular}{| >{\raggedright\arraybackslash}p{8cm} | c | c |c |c|c|c|r|}
+        \hline
+        \rowcolor[HTML]{DCDCDC}  \multicolumn{8}{|c|}{RETRAINING} \\ \hline
+        Task / Personal                & SA & PM & PL & DS & DE & SE & Complexity \\ \hline
+        Obtener nuevos datos           & 0  & 0  & 5  & 5  & 30 & 0  & Media      \\ \hline
+        Reentrenar                     & 0  & 0  & 20 & 40 & 60 & 0  & Alta       \\ \hline
+        Desplegar a producción         & 0  & 0  & 2  & 0  & 5  & 0  & Baja       \\ \hline
+        Seguimiento y fixes del modelo & 0  & 0  & 10 & 20 & 40 & 0  & Baja       \\ \hline
+        \hline \multicolumn{7}{|c|}{Total} & 15.610,00 \euro \\ \hline
+    \end{tabular}
+\end{center}
+
+\subsection{PARTIDA 3: NUEVA ENFERMEDAD}\label{subsec:partida-3:--nueva-enfermedad}
+\begin{center}
+    \renewcommand{\arraystretch}{1.0} % Adjust row height
+    \setlength{\tabcolsep}{5pt} % Adjust column spacing
+    \begin{tabular}{| >{\raggedright\arraybackslash}p{8cm} | c | c |c |c|c|c|r|}
+        \hline
+        \rowcolor[HTML]{DCDCDC}  \multicolumn{8}{|c|}{INICIO} \\ \hline
+        Task / Personal                                                          & SA & PM & PL & DS & DE  & SE & Complexity \\ \hline
+        Planificación - Reuniones con los stakeholders                           & 12 & 16 & 12 & 0  & 0   & 0  & Baja       \\ \hline
+        \hline \multicolumn{7}{|c|}{Total} & 4.080,00 \euro \\ \hline
+        \noalign{\vskip 5mm}
+        \hline
+        \rowcolor[HTML]{DCDCDC}  \multicolumn{8}{|c|}{EXPLORATORY DATA ANALYSIS} \\ \hline
+        Task / Personal                                                          & SA & PM & PL & DS & DE  & SE & Complexity \\ \hline
+        Limpieza de datos                                                        & 4  & 6  & 6  & 90 & 30  &    & Baja       \\ \hline
+        Feature Engineering                                                      &    &    &    &    &     &    & Baja       \\ \hline
+        Visualización de datos                                                   &    & 6  &    &    &     &    & Baja       \\ \hline
+        \hline \multicolumn{7}{|c|}{Total} & 10.420,00 \euro \\ \hline
+        \noalign{\vskip 5mm}
+        \hline
+        \rowcolor[HTML]{DCDCDC}  \multicolumn{8}{|c|}{DESARROLLO DEL MODELO 1} \\ \hline
+        Task / Personal                                                          & SA & PM & PL & DS & DE  & SE & Complexity \\ \hline
+        Investigación sobre posibles modelos                                     & 10 & 5  & 15 & 5  & 1   & 0  & Baja       \\ \hline
+        Entrenamiento del modelo                                                 & 0  & 0  & 40 & 75 & 125 & 0  & Alta       \\ \hline
+        Documentación modelo                                                     & 0  & 0  & 0  & 5  & 5   & 0  & Baja       \\ \hline
+        Testing y comparación                                                    & 0  & 0  & 0  & 5  & 15  & 0  & Media      \\ \hline
+        \hline \multicolumn{7}{|c|}{Total} & 21.060,00 \euro \\ \hline
+        \noalign{\vskip 5mm}
+        \hline
+        \rowcolor[HTML]{DCDCDC}  \multicolumn{8}{|c|}{APLICACIÓN INTERFAZ GRÁFICA} \\ \hline
+        Task / Personal                                                          & SA & PM & PL & DS & DE  & SE & Complexity \\ \hline
+        Desarrollo de la aplicación                                              & 0  & 0  & 0  & 0  & 0   & 20 & Media      \\ \hline
+        \hline \multicolumn{7}{|c|}{Total} & 1.200,00\euro \\ \hline
+        \noalign{\vskip 5mm}
+        \hline
+        \rowcolor[HTML]{DCDCDC}  \multicolumn{8}{|c|}{VALIDACIÓN COMITÉ ÉTICO} \\ \hline
+        Task / Personal                                                          & SA & PM & PL & DS & DE  & SE & Complexity \\ \hline
+        Comitè ètic - Reunión general                                            & 5  & 5  & 5  & 2  & 2   & 2  & Baja       \\ \hline
+        Comitè ètic - Revalidación y correcciones propuestas por el comité ético & 2  & 2  & 2  & 1& 1& 1& Baja \\ \hline
+        \hline \multicolumn{7}{|c|}{Total} & 42.670,00 \euro \\ \hline
+        \noalign{\vskip 5mm}
+        \hline
+        \rowcolor[HTML]{DCDCDC}  \multicolumn{8}{|c|}{PUESTA A PRODUCCIÓN} \\ \hline
+        Task / Personal                                                          & SA & PM & PL & DS & DE  & SE & Complexity \\ \hline
+        Formación a los médicos del hospital                                     & 2  & 2  & 2  & 4  & 4   & 4  & Baja       \\ \hline
+        \hline \multicolumn{7}{|c|}{Total} & 1.360,00 \euro \\ \hline
+    \end{tabular}
+\end{center}
+
+\subsection{Roadmap plan by weeks}\label{subsec:time-plan-by-weeks}
+
+\begin{center}
+    \begin{tabular}{|l|r|}
+        \hline
+        \toprule
+        \textbf{Partida 1}  & \textbf{Cost by week} \\ \hline
+        \midrule
+        Week 1              & 19.260,50 \euro       \\ \hline
+        Week 2              & 15.975,00 \euro       \\  \hline
+        Week 3              & 9.550,00 \euro        \\ \hline
+        Week 4              & 17.631,00 \euro       \\ \hline
+        Week 5              & 12.020,00 \euro       \\ \hline
+        Week 6              & 20.355,00 \euro       \\ \hline
+        Week 7              & 23.100,00 \euro       \\ \hline
+        Week 8              & 16.685,00 \euro       \\ \hline
+        Week 9              & 12.855,00 \euro       \\ \hline
+        Week 10             & 6.774,00 \euro        \\ \hline
+        Week 11             & 8.567,00 \euro        \\ \hline
+        Week 12             & 5.404,00 \euro        \\ \hline
+        Week 13 and forward & 30.186,00 \euro       \\ \hline
+        \bottomrule
+    \end{tabular}
+\end{center}
+
+\begin{center}
+    \begin{tabular}{|l|r|}
+        \hline
+        \toprule
+        \textbf{Partida 2} & \textbf{Retraining} \\ \hline
+        \midrule
+        Week 1             & 10.785,00 \euro     \\ \hline
+        Week 2             & 8.689,00 \euro      \\  \hline
+        Week 3             & 7.007,00 \euro      \\ \hline
+        \bottomrule
+    \end{tabular}
+\end{center}
+
+\begin{center}
+    \begin{tabular}{|l|r|}
+        \hline
+        \toprule
+        \textbf{Partida 3} & \textbf{New illness} \\ \hline
+        \midrule
+        Week 1             & 23.740,00 \euro      \\ \hline
+        Week 2             & 23.580,00 \euro      \\  \hline
+        Week 3             & 14.549,00 \euro      \\ \hline
+        Week 4             & 6.859,00 \euro       \\ \hline
+        Week 5             & 4.123,00 \euro       \\ \hline
+        \bottomrule
+    \end{tabular}
+\end{center}
