@@ -1,0 +1,95 @@
+\section{Roles and tasks, and project management tools}\label{sec:define-the-roles-and-tasks-and-set-up-project-management-tools}
+
+\subsection{Roles - \href{https://learn.microsoft.com/es-es/azure/architecture/data-science-process/overview}{According to TDSP}}\label{subsec:roles}
+
+\begin{center}
+
+    \renewcommand{\arraystretch}{1.5} % Adjust row height
+    \setlength{\tabcolsep}{10pt} % Adjust column spacing
+    \noindent
+    \begin{tabular}{| >{\raggedright\arraybackslash}p{6cm} | >{\raggedright\arraybackslash}p{3cm} |}
+        \hline
+        \textbf{Role}                            & \textbf{Recommended Count} \\
+        \hline
+        Solution Architect                       & 1                          \\
+        \hline
+        Project Manager                          & 1                          \\
+        \hline
+        Project Lead                             & 1                          \\
+        \hline
+        Data Scientist                           & 1--2                       \\
+        \hline
+        Data Engineer                            & 3--4                       \\
+        \hline
+        Application Developer                    & 1--2                       \\
+        \hline
+        \textit{(External)} Ethical Committee    & --                         \\
+        \hline
+        \textit{(External)} Doctors and Patients & --                         \\
+        \hline
+    \end{tabular}
+\end{center}
+
+\subsection{Tasks}\label{subsec:tasks}
+\begin{itemize}
+    \item \textbf{Solution Architect}: Works on a variable schedule, depending on the project phase (more on demand as the project progresses).
+    They need to understand the requirements, the problem, objectives, and constraints.
+    Their job is to define the solution’s architecture, infrastructure, software, and tools (even though this is within the Microsoft framework).
+    They collaborate closely with data engineers and data scientists and act as a ``bridge'' between stakeholders and the technical/development team.
+    They also participate in stakeholder meetings.
+    Ideally, this person has a cybersecurity or privacy background.
+    At the beginning of the project, they will work closely with the data scientists to design the solution.
+
+    \item \textbf{Project manager}: Works part-time (usually in multiple projects).
+    Their role is to communicate project needs to the teams.
+    Ideally, they have a background in data science and/or medicine, but if they lack experience in these fields, they should receive training.
+    They handle stakeholder interactions, translate goals and scope into actionable tasks for teams, and ensure best practices (set by the architect) are followed.
+    They oversee the project conceptually and generally, and they’re responsible for addressing any issues, questions, or problems.
+    They also attend stakeholder meetings.
+
+    \item \textbf{Project lead}: Is the most experienced person on the data science team and serves as the technical leader.
+
+    \item \textbf{Data scientist}: Focuses on data expertise, AI models, and presenting/communicating results.
+    They work closely with the data engineers to ensure everything aligns
+
+    \item \textbf{Data engineer}: Programmer specialized in data processing, though they don’t need deep theoretical knowledge.
+    Their responsibilities include extracting knowledge from data, implementing security protocols, and anonymizing data.
+
+    \item \textbf{Application developer}: Programmer specialized in building interfaces and ensuring accessibility.
+
+    \item \textbf{Ethics committee and doctors}: Only when needed for extra assistance
+\end{itemize}
+
+As a general task, even though there will be a specialized ethics committee,
+all team members must always keep in mind the ethical requirements of the project.
+This includes being mindful of what data is used, how it is used,
+ensuring that no parts of the population are discriminated against, and making sure the final model is not biased.
+Additionally, all members must adhere to any guidelines or directives set by the ethics committee.
+
+\subsection{\href{https://www.microsoft.com/es-es/microsoft-365/planner/microsoft-planner}{Management tools}}\label{subsec:management-tools}
+\begin{itemize}
+    \item Azure tools (ML \& analysis)
+    \item Microsoft power Bi (Data visualization)
+    \item Azure security center
+    \item \dots
+\end{itemize}
+We will use Microsoft tools to ensure they can be easily applied in the context of a public entity.
+Specifically, we will use Microsoft Teams to facilitate communication within the project and manage various tools.
+For project management, we’ll rely on Microsoft Planner, which allows us to set tasks, assign them, and prepare a project calendar.
+
+\begin{warning}
+    \textbf{Challenge}: There’s a significant change in the senior leadership of the company
+
+    \textbf{Solution}:
+
+    \begin{itemize}
+        \item \textbf{Project Manager}: Perform extensive initial meetings to ensure that they understand where the project is at the moment, what should be done, the scope, the followed methodology… Ideally, the meetings will be with the data scientists, the project lead and the stakeholders.
+        \item \textbf{Project lead}: Promote a Data Scientist
+        \item \textbf{En general}:
+        \begin{itemize}
+            \item Ensure there's reliable documentation with all the requirements (technical, ethical, scope, constraints…).
+            \item If the leadership figure suddenly becomes unavailable, a temporary substitute should be appointed, even if it’s not the ideal solution.
+            \item If the leadership figure is external to the data science team (stakeholders), the project manager would meet with the new leader.
+        \end{itemize}
+    \end{itemize}
+\end{warning}
