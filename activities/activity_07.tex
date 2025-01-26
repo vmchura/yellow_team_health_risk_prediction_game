@@ -1,0 +1,86 @@
+\section{Ethical considerations}\label{sec:ethical-considerations}
+
+We’ll summarize the considerations we’ve discussed throughout the project:
+
+\begin{itemize}
+    \item False Negatives: As mentioned in the model section, we’ll prioritize minimizing false negatives.
+    In a medical context, generating a false negative is more critical than aiming for perfect accuracy.
+
+
+    \item Ethics Committee: We’ll involve a group of external specialists to guide us through doubts and decisions,
+    as well as to validate the project.
+    At a minimum, they will conduct a final validation, but given the project’s sensitivity,
+    we aim to involve them at the start and at intermediate milestones.
+
+
+    \item Confidentiality: We’ll work exclusively with anonymized data,
+    leveraging patient medical histories and their evolution over time.
+    Only doctors will have access to this information via the application.
+    Access to the server and database will be limited to one person with private keys.
+    Additionally, any data we decide to collect will be validated with the ethics committee to ensure they are sufficiently anonymized and feasible for training a model.
+
+
+    \item Responsibility and Licensing:
+    All professionals using the tool must go through a licensing system and accept terms of use aligned with the ethical document and established conditions.
+    For example, the tool can only be used by authorized individuals or companies, solely for medical purposes,
+    and not for discriminating against individuals for non-health-related goals.
+    We’ll rely on the application’s administrators to advise us on repercussions and actions to take against those who breach these terms.
+
+
+    \begin{itemize}
+        \item For final patients, we can prepare an explanatory video and ask them to read a usage guide for data.
+
+
+    \end{itemize}
+    \item Biases: We’ll make every effort to detect biases at any point in the project,
+    leveraging data from other hospitals if we detect anomalies or disparities, as mentioned in previous challenges.
+
+
+    \item Output and Transparency: The model will not provide suggestions unless explicitly requested by the doctor.
+    Using an ensemble model, we’ll provide technical outputs (as specified by doctors for each condition,
+    e.g., glucose level, heart rate) to ensure the model remains explainable and transparent.
+
+\end{itemize}
+
+Comments by one professor:
+\begin{itemize}
+    \item Governance and Accountability Report: There should be a clear report detailing the governance and accountability of each part of the process, including data and who is responsible for what.
+
+
+    \item Patient Consent: The final patient must have the ability to withdraw consent for sharing their data at any time. They should be able to both give and revoke consent easily.
+
+
+    \item Continuous Monitoring: As already included in the budgets for ongoing monitoring, this aspect should be explicitly mentioned here as a critical part of the process.
+
+
+    \item Data Minimization: Only use the data strictly necessary for the model, ensuring we’re not working with excessive or irrelevant information.
+
+
+\end{itemize}
+
+\subsection*{}
+\begin{warning}
+    \textbf{Challenge}: A team you depend on will not provide the data on time.
+
+    \textbf{Solution}: We assume that it’s an external medical team.
+
+    \begin{itemize}
+        \item Change the order of illnesses handling of the project.
+        For example if we can’t handle diabetes at the start, try to see if we have enough data on another disease.
+        We should agree on the order we will handle each illness and schedule it, to ensure this issue doesn’t happen again,
+        and so that they commit to having the data ready on time.
+        It would be ideal if the Project Manager could oversee that we have the data on time.
+
+
+        \item If possible and if the stakeholders agree, look for external data to replace the currently missing data
+        (temporarily or permanently) in similar organizations.
+        Of course, whether the data from another hospital is suitable as a replacement is up to the medical experts to decide.
+
+
+        \item Agree that each deadline will be relative to the date we receive the necessary data to begin.
+
+
+    \end{itemize}
+
+
+\end{warning}
