@@ -1,0 +1,70 @@
+\section{Define the methodology and lifecycle}\label{sec:define-the-methodology-and-lifecycle}
+
+\subsection{Methodology: How do we carry out this project?}\label{subsec:methodology:how-do-we-carry-out-this-project}
+
+\begin{itemize}
+    \item TDSP (Scrum): It uses agile principles and team organization.
+    It’s not a straightforward delivery, but a process of trial and error with different iterations, involving six months of testing and refining.
+    A key aspect is the Customer Acceptance, which is essential in a medical context and must be revised continuously.
+    TDSP also defines the roles within the team.
+\end{itemize}
+
+\subsection{Steps}\label{subsec:steps}
+
+\begin{itemize}
+    \item Understand the business: Conduct regular meetings with stakeholders, ideally once every two weeks, to gather requirements and align our problem definition.
+    \item Modeling: Develop models based on the defined problem and requirements.
+    \item Deployment: Implement the models in production.
+    \item Iteration: Continuously refine and iterate the process.
+    \item Customer Acceptance: Assess whether medical professionals agree with the model.
+    Feedback is critical throughout the project.
+\end{itemize}
+
+\subsection{Practical Approach:}\label{subsec:practical-approach:}
+
+\begin{itemize}
+    \item Start with a representative hospital that has implemented integrated systems between laboratories (using a test set as the first approach).
+    \item Work with the same group of doctors for consistent feedback or compare results with similar hospitals, such as hospitals within a specific city.
+    \item Ensure patient data confidentiality is maintained at all times.
+\end{itemize}
+
+\subsection{Ethical Considerations}\label{subsec:ethical-considerations}
+
+\begin{itemize}
+    \item Introduce an ethics committee, external to the team, that reviews every project delivery.
+    \item Ensure all steps are well-documented and verifiable.
+\end{itemize}
+
+\subsection{Lifecycle}\label{subsec:lifecycle}
+
+\begin{itemize}
+    \item Data Exploration (EDA): Analyze relationships, detect outliers, process and clean the data.
+    \item MVP (Minimum Viable Product): Develop a model capable of making predictions.
+    Focus on three specific diseases, the ones recommended by stakeholders.
+    Consider key characteristics specific to certain diseases, such as hereditary factors.
+    For example, consider cases where parents have a history of chronic illnesses to reduce the margin of error.
+    \item Anonymization of Data: Use cryptographic techniques or add random noise to protect sensitive personal data.
+    Later, sensitive information can be de-anonymized if necessary.
+    Ensure protection of sensitive data, such as religion, politics, and health, in compliance with the EU Data Protection Regulation (GDPR), as these require special security.
+
+\end{itemize}
+
+\subsection{Ethics Committee Review}\label{subsec:ethics-committee-review}
+Help prevent bias or the marginalization of minorities.
+Before showing proposed approaches to the ethics committee, ensure compliance with European regulations.
+Also consult legal and privacy experts on matters of transparency and data protection.
+
+\subsection{Additional consideration}\label{subsec:additional-consideration}
+
+Using Microsoft tools (as specified by the TDSP guidelines) is very important in the context of a public organization, since they will most likely already be using Microsoft tools.
+
+\subsection*{}
+\begin{warning}
+    \textbf{Challenge}: Oops!
+    The Data Science Team noticed that the data is biased.
+
+    \textbf{Solution}: Collect more data from other hospitals to counteract the imbalance in the dataset.
+    Gather the data from hospitals or datasets where there’s a higher diversity of patients (socially, economically…)
+
+
+\end{warning}
