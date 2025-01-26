@@ -1,0 +1,75 @@
+\section{Predictive model; additional datasets and data analysis infrastructure}\label{sec:predictive-model:-additional-datasets-and-data-analysis-infrastructure}
+
+We took into account ethical requirements (transparency and also the fact that a program determines if someone should receive treatment),
+and we thought that while we could make a model that just said yes or no,
+we should create a model (or ensemble of models) that can predict the metrics that the experts in medicine define (like glucose, heart rate\dots),
+and additionally, use these predicted metrics to predict if the patient will have an illness or not, just as a suggestion that doctors can use.
+This way, the doctors can reach their own conclusions, and have additional suggestions.
+They can assess by themselves the model’s reliability.
+Of course, we would have already computed success metrics during testing, with at least 85\% recall. \\
+
+For the continuous / numerical metrics, we will of course use regression models, and we will use metrics such as Mean Squared Error.
+If any other metric is categorical, we will decide whether to use accuracy or other metrics like recall or precision,
+depending on whether we prioritize False Negatives or False Positives.
+In the case of the model that has to give a verdict on the illness we will try to use recall as the most important metric,
+as it increases as False Negatives decrease.
+That’s because a False Negative in this case, tells a sick person that they are fine, and if the prediction is to be trusted,
+then that patient won’t get the treatment they need.
+So, we will prefer to bias the model towards getting more false positives than false negatives.
+The ideal would be 0 False Negatives. \\
+
+Datasets: We will need the anonymized patient history evolution, with and without the diseases.
+These datasets will contain very sensitive data, and we have to make sure there are no leaks.
+The datasets structure will be validated before by the ethical committee. \\
+
+Data Analysis Infrastructure: And taking into account an old challenge,
+we may ask other hospitals for data if we see biases or the need for extra data.
+
+
+\begin{itemize}
+    \item \textbf{Output:}
+    \begin{itemize}
+        \item Important metrics that specialists (doctors) provide to us, in order to explain.
+        Each model will predict a different relevant feature in T time.
+        Example: Glucose levels in 1 year, or 3 years \dots
+        \item The “final” model can be used to use these predicted features to give the risk a patient has to get a certain disease as a classification task.
+        The probabilities computed by the model can be used as a risk assessment.
+    \end{itemize}
+
+    \item \textbf{Structure:}
+    \begin{itemize}
+        \item Ensemble of N Models in order to have explainability.
+        These models will predict the metrics that are relevant to determining if the patient will contract an illness.
+        That way, doctors can reach their own conclusions from them, and understand why the “final” model made a certain prediction.
+    \end{itemize}
+
+    \item \textbf{Optimization metrics:}
+    \begin{itemize}
+        \item Recall (for the model that has to say if the patient will have an illness or not).
+        \item As explained before, other models will use other metrics such as Mean Squared Error (regression) or accuracy (classification)
+    \end{itemize}
+\end{itemize}
+
+
+
+\subsection*{}
+\begin{warning}
+    \textbf{Challenge}: A stakeholder questions the practicality of one of the proposed success metrics.
+    (in our case we assume that the stakeholder questions the technical metrics,
+    and thinks that the best option is to prioritize the number of correct predictions in the “final model”)
+
+    \textbf{Solution}:
+
+    \begin{itemize}
+        \item Try to understand what issue they see.
+        Maybe it comes to a simple lack of understanding of types of errors (False negatives versus False positives).
+        \item If their complaints make sense, see if they propose any alternative.
+        \item Explain the recall and make sure they understand: In the medical context,
+        it’s more important to optimize the false negatives (minimize them),
+        in order to prevent the final users (families) to think that they were healthy when they weren’t, than to optimize the correct outputs.
+        \item Give examples to show the difference in results between a model that prioritizes accuracy and a model that prioritizes recall.
+        A model with higher accuracy will be correct more times, but a model with a high recall will be correct on more critical cases.
+    \end{itemize}
+
+
+\end{warning}
