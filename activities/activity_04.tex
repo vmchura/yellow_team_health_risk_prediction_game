@@ -1,0 +1,69 @@
+\section{Define deliverables}\label{sec:define-deliverables}
+\begin{itemize}
+    \item Functional Documentation
+    \begin{itemize}
+        \item Consensus document for X chronic diseases
+        \item Consensus document on the features or important information to address these diseases
+        \item Consensus document on software usability by doctors
+    \end{itemize}
+
+    \item Software documentation created by the solution architect (scope, architecture, etc.)
+    \begin{itemize}
+        \item Solution model
+    \end{itemize}
+
+    \item Dataset used (clean, with all features)
+    \begin{itemize}
+        \item Clean dataset
+    \end{itemize}
+
+    \item Trained Model
+    \begin{itemize}
+        \item Pipeline for data preprocessing
+        \item Set of models with 85\% recall
+        \item Consensus document ensuring doctors can interpret the results
+    \end{itemize}
+
+    \item Ethical document (best practices, ethical committee confirmation)
+
+    \item User-friendly application/interface for doctors
+    \begin{itemize}
+        \item Documentation of the pipeline deployment from model results to doctors' computers
+        \item Usability metrics report
+    \end{itemize}
+
+    \item Source code (model training, application, data processing)
+
+    \item Model performance report in public health in Catalonia (testing report), comparison with other hospitals, statistical method
+    \begin{itemize}
+        \item Periodic reports according to milestones achieved on time and communicated
+        \item Document with stakeholder consensus on the methodology to measure project outcomes. Comparison with other hospitals
+    \end{itemize}
+
+    \item License to use the model + terms of use/policies
+
+    \item User guide
+\end{itemize}
+
+\newpage
+\subsection*{}
+\begin{warning}
+    \textbf{Challenge}: You discover that your model may be misused (for malicious purposes)
+
+    \textbf{Solution}:
+
+    Implement licensing and Terms of Use:
+
+    \begin{itemize}
+        \item Use a license agreement and terms of use aligned with the ethical document and established conditions. Example: The program should only be usable by authorized individuals or organizations, exclusively for medical purposes, and not to discriminate or exploit individuals beyond improving their health.
+        \item Seek legal counsel regarding the repercussions for those who violate these terms.
+        \item Example of misuse: Insurance companies exploiting the program for discriminatory purposes.
+    \end{itemize}
+
+    Also required actions:
+    \begin{itemize}
+        \item System Layer Level
+        \item Application Layer Level
+        \item Database (BBDD) Layer Level
+    \end{itemize}
+\end{warning}
